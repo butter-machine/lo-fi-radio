@@ -1,0 +1,9 @@
+#sign {
+    margin: auto;
+    padding: 3%;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #310069;
+}

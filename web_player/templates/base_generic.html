@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<link rel="stylesheet" type="text/css" href="{% static "web_player/css/base_style.css" %}" />
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+<script type="text/javascript" src="{% static "web_player/scripts/js/jquery-3.4.1.min.js" %}"></script>
+
+<html lang="en">
+    <head>
+        <title>Lo-Fi Radio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="description" content="Nothing but relax music">
+        <meta name="keywords" content="lofi, lo-fi, radio, relax, stream, music">
+    </head>
+
+    <body>
+        {% block content %}<!-- default content text (typically empty) -->{% endblock %}
+    </body>
+</html>

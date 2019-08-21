@@ -1,0 +1,30 @@
+{% extends "base_generic.html" %}
+
+<head>
+ 
+</head>
+
+{% block content %}
+    {% load staticfiles%}
+    <link rel="stylesheet" type="text/css" href="{% static "web_player/css/index_style.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "web_player/css/controls_style.css" %}" />
+    <audio id="audio" 
+        preload="auto"
+        onloadstart="buffering()"
+        oncanplay="canPlay()">
+        <source src="http://localhost:8040" type="audio/mpeg">
+    </audio>
+    <script type="text/javascript" src="{% static "web_player/scripts/js/controls.js" %}"></script>
+    <script type="text/javascript" src="{% static "web_player/scripts/js/sign_update.js" %}"></script>
+
+    {% include "sign.html" %}
+
+    <div id="web_player_controls">
+        <div id="play_container">
+            <button id="play" type="button">play</button>
+        </div>
+        <div id="volume_container">
+            <input id= "volume" type="range" min="1" max="100" step="1" value="100"> 
+        </div>
+    </div>
+{% endblock %} 
