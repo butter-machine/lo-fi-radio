@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'lo-fi-radio.herokuapp.com',
     'localhost',
+    '0.0.0.0',
 ]
 
 
