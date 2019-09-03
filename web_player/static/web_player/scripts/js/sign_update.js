@@ -10,5 +10,5 @@ function update() {
 
 $(document).ready(function() {
     update();
-    setInterval('update()', 2000);
+    setInterval('update()', 3000);
 });

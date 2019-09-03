@@ -121,15 +121,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'web_player/static'),
+    os.path.join(BASE_DIR, 'web_player/static/'),
+    os.path.join(BASE_DIR, 'static/'),
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-AUDIO_DIR = 'static/web_player/audio'
-
-PLAYLISTS_DIR = os.path.join(BASE_DIR, 'web_player/static/web_player/playlists/')
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
