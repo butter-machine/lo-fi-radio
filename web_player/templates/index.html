@@ -16,6 +16,7 @@
     </audio>
     <script type="text/javascript" src="{% static "web_player/scripts/js/controls.js" %}"></script>
     <script type="text/javascript" src="{% static "web_player/scripts/js/sign_update.js" %}"></script>
+    <script type="text/javascript" src="{% static "web_player/scripts/js/listeners_count_update.js" %}"></script>
 
     {% include "sign.html" %}
 
@@ -27,4 +28,6 @@
             <input id= "volume" type="range" min="1" max="100" step="1" value="100"> 
         </div>
     </div>
+
+    {% include "listeners_count.html" %}
 {% endblock %} 

@@ -1,5 +1,5 @@
 from django.shortcuts import render, render_to_response
-from .static.web_player.scripts.python import parse_xspf as parser
+from .static.web_player.scripts.python.icecast_interface import IcecastInterface
 # Create your views here.
 
 def index(request):
@@ -10,10 +10,19 @@ def index(request):
     )
 
 def sign_update(request):
-    result = parser.parse()
+    result = IcecastInterface.getSign()
     response_dict = {'artist': result[0], 'track': result[1]}
     return render(
         request,
         'sign.html',
+        context=response_dict
+    )
+
+def listeners_count_update(request):
+    result = IcecastInterface.getListenersCount()
+    response_dict = {'listeners_count': result}
+    return render(
+        request,
+        'listeners_count.html',
         context=response_dict
     )

@@ -1,4 +1,4 @@
-function update() {
+function sign_update() {
     $.ajax({
         url: "sign_update",
         cache: false,
@@ -9,6 +9,6 @@ function update() {
 }
 
 $(document).ready(function() {
-    update();
-    setInterval('update()', 3000);
+    sign_update();
+    setInterval('sign_update()', 3000);
 });
