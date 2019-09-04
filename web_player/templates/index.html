@@ -1,33 +1,25 @@
 {% extends "base_generic.html" %}
 
-<head>
- 
-</head>
-
-{% block content %}
+<body>
+    {% block content %}
     {% load staticfiles%}
     <link rel="stylesheet" type="text/css" href="{% static "web_player/css/index_style.css" %}" />
-    <link rel="stylesheet" type="text/css" href="{% static "web_player/css/controls_style.css" %}" />
+    <script type="text/javascript" src="{% static "web_player/scripts/js/player_controls.js" %}"></script>
     <audio id="audio" 
         preload="auto"
         onloadstart="buffering()"
         oncanplay="canPlay()">
         <source src="http://52.36.229.29:8000/main.ogg" type="audio/ogg">
     </audio>
-    <script type="text/javascript" src="{% static "web_player/scripts/js/controls.js" %}"></script>
-    <script type="text/javascript" src="{% static "web_player/scripts/js/sign_update.js" %}"></script>
-    <script type="text/javascript" src="{% static "web_player/scripts/js/listeners_count_update.js" %}"></script>
 
-    {% include "sign.html" %}
+        {% include "sign.html" %}
+        {% include "player_controls.html" %}
+    {% endblock %}
+</body>
 
-    <div id="player_controls">
-        <div id="play_container">
-            <button id="play" type="button">play</button>
-        </div>
-        <div id="volume_container">
-            <input id= "volume" type="range" min="1" max="100" step="1" value="100"> 
-        </div>
-    </div>
-
-    {% include "listeners_count.html" %}
-{% endblock %} 
+<footer>
+        {% block footer %}
+            {% include "listeners_count.html" %}
+            <a class="info" id="m3u" href="http://52.36.229.29:8000/main.ogg.m3u" target="_blank">Listen in player</a>
+        {% endblock %}
+</footer>

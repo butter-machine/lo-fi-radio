@@ -10,5 +10,5 @@ function sign_update() {
 
 $(document).ready(function() {
     sign_update();
-    setInterval('sign_update()', 3000);
+    setInterval('sign_update()', 4000);
 });

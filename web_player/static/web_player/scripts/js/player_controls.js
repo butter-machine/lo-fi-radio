@@ -26,7 +26,7 @@ $(document).ready(function() {
 });
 
 function buffering() {
-    $("#play").text("connecting with space...");
+    $("#play").text("connecting...");
 }
 
 function canPlay() {

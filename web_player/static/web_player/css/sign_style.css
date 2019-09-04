@@ -1,0 +1,18 @@
+#sign {
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #89b580;
+}
+
+@media screen and (max-width: 650px) {
+    #sign {
+        padding: 4%;
+        font-size: 150%;
+    }
+
+}

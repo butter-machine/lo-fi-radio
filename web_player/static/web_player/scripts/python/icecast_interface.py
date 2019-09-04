@@ -28,4 +28,3 @@ class IcecastInterface():
         listeners_count_index = annotation.find(LISTENERS_COUNT_STRING)
         listeners_count = annotation[listeners_count_index + len(LISTENERS_COUNT_STRING)]
         return listeners_count
-
