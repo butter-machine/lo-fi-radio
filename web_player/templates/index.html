@@ -5,6 +5,8 @@
     {% load staticfiles%}
     <link rel="stylesheet" type="text/css" href="{% static "web_player/css/index_style.css" %}" />
     <script type="text/javascript" src="{% static "web_player/scripts/js/player_controls.js" %}"></script>
+    <script type="text/javascript" src="{% static "web_player/scripts/js/listeners_count_update.js" %}"></script>
+    <script type="text/javascript" src="{% static "web_player/scripts/js/sign_update.js" %}"></script>
     <audio id="audio" 
         preload="auto"
         onloadstart="buffering()"
