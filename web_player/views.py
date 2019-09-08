@@ -1,5 +1,5 @@
 from django.shortcuts import render, render_to_response
-from .static.web_player.scripts.python.icecast_interface import IcecastInterface
+from .icecast_api.icecast_interface import IcecastInterface
 # Create your views here.
 
 def index(request):

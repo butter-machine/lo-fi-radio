@@ -11,7 +11,7 @@
         preload="auto"
         onloadstart="buffering()"
         oncanplay="canPlay()">
-        <source src="http://52.36.229.29:8000/main.ogg" type="audio/ogg">
+        <source src={{ stream }} type="audio/mpeg">
     </audio>
 
         {% include "sign.html" %}
@@ -22,6 +22,6 @@
 <footer>
         {% block footer %}
             {% include "listeners_count.html" %}
-            <a class="info" id="m3u" href="http://52.36.229.29:8000/main.ogg.m3u" target="_blank">Listen in player</a>
+            <a class="info" id="m3u" href={{ m3u }} target="_blank">Listen in player</a>
         {% endblock %}
 </footer>
