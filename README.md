@@ -31,6 +31,6 @@ Adding media
 
 You can copy some music and jingles to */usr/share/liquidsoap/radio/music/mp3* and */usr/share/liquidsoap/radio/music/jingles* respectively (or other dirs you set in .liq file).
 ***
-That*s it! Now you can enjoy your own web radio!
+That's it! Now you can enjoy your own web radio!
 
 @Pavel Antsypovich, 2019
