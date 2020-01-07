@@ -1,0 +1,17 @@
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    overflow: hidden;
+    background-color: rgb(115, 135, 247);
+    transition: 0.3s;
+}
+
+.bt_sidebar {
+    position: relative;
+}
+
+.content {
+    height: 100%;
+    margin-left: 300px;
+}
