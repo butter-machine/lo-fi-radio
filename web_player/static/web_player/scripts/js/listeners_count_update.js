@@ -3,7 +3,7 @@ function listeners_count_update() {
         url: "listeners_count_update",
         cache: false,
         success: function(data) {
-            $("#listeners_count").html(data);
+            $("#listeners-count").html(data);
         }
     });
 }

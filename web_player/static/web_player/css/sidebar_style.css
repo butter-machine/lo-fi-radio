@@ -8,16 +8,18 @@
 }
 
 .sidebar a {
-    transition: 0.3s;
     font-size: 25px;
+    transition: 0.3s;
 }
 
 .bt_sidebar {
-    position: relative;
+    position: absolute;
+    bottom: 13%;
     transition: 0.3s;
 }
 
 .content {
     height: 100%;
     margin-left: 0;
+    transition: 0.3s;
 }

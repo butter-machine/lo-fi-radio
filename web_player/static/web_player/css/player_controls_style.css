@@ -1,76 +1,66 @@
 #player_controls_container {
+    margin: 20px 10px;
+    height: 30%;
     position: relative;
-    padding: 0;
+    text-align: center;
 }
 
 .player_controls {
-    width: 20%;
+    top: 20%;
+    margin: 3px 0;
+    display: inline-block;
+    width: 25%;
     height: 30px;
-    margin: -7px;
-    position: relative;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
     background: #89b580;
+    position: relative;
+    border: 0;
+    outline: none;
+    cursor: pointer;
 }
 
 #play {
-    display: block;
-    border: 0;
-    border-radius: 0px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
     word-wrap: break-word;
     font-weight: bold;
     color: #d3e18c;
-    outline:none;
 }
 
-input[type=range] {
-    -webkit-appearance: none; 
-    width: 20%;
-    outline:none;
+#volume {
+    -webkit-appearance: none;
 }
   
-input[type=range]::-webkit-slider-thumb {
+#volume::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 28px;
     width: 28px;
-    cursor: pointer;
     background: #d3e18c;
-    outline:none;
 }
 
-input[type=range]::-moz-range-thumb {
+#volume::-moz-range-thumb {
     -webkit-appearance: none;
     height: 28px;
     width: 28px;
-    cursor: pointer;
     background: #d3e18c;
-    outline:none;
 }
 
-input[type=range]::-ms-thumb {
+#volume::-ms-thumb {
     -webkit-appearance: none;
     height: 28px;
     width: 28px;
-    cursor: pointer;
     background: #d3e18c;
-    outline:none;
 }
 
-input[type=range]:focus {
+#volume:focus {
     outline: none;
 }
 
-input[type=range]::-ms-track {
+#volume::-ms-track {
     width: 100%;
-    cursor: pointer;
     background: transparent;
     border-color: transparent;
     color: transparent;
-    outline:none;
 }
 
 @media screen and (max-width: 650px) {
@@ -88,22 +78,22 @@ input[type=range]::-ms-track {
         height: 50px;
     }
 
-    input[type=range] {
+    #volume {
         width: 50%; 
         height: 50px;
     }
 
-    input[type=range]::-webkit-slider-thumb {
+    #volume::-webkit-slider-thumb {
         height: 50px;
         width: 50px;
     }
     
-    input[type=range]::-moz-range-thumb {
+    #volume::-moz-range-thumb {
         height: 50px;
         width: 50px;
     }
     
-    input[type=range]::-ms-thumb {
+    #volume::-ms-thumb {
         height: 50px;
         width: 50px;
     }
