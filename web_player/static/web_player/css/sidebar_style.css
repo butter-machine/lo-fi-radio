@@ -1,17 +1,23 @@
 .sidebar {
     height: 100%;
-    width: 300px;
+    width: 0;
     position: fixed;
     overflow: hidden;
     background-color: rgb(115, 135, 247);
     transition: 0.3s;
 }
 
+.sidebar a {
+    transition: 0.3s;
+    font-size: 25px;
+}
+
 .bt_sidebar {
     position: relative;
+    transition: 0.3s;
 }
 
 .content {
     height: 100%;
-    margin-left: 300px;
+    margin-left: 0;
 }
