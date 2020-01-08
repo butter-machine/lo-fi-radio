@@ -1,6 +1,3 @@
-.info{
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #d3e18c;
+.wrapper {
+    margin: 20px 0;
 }

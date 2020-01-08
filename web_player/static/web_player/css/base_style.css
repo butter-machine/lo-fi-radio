@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to bottom,rgba(0,0,0,0.15) 85%, rgba(38, 57, 64, 0.55) 50%), url('../images/background.png');
+    background-image: url('../images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,4 +11,5 @@ body {
     height: 100%;
     overflow: hidden;
     margin: 0;
+    transition: 0.3s;
 }

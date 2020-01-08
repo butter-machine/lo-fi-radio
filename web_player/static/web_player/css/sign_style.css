@@ -1,7 +1,9 @@
-#sign {
+#sign-wrapper {
     height: 20%;
-    margin: 20px 10px;
     text-align: center;
+}
+
+#sign {
     font-size: 150%;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;

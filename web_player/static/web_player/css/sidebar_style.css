@@ -1,20 +1,39 @@
 .sidebar {
     height: 100%;
     width: 0;
-    position: fixed;
+    position: absolute;
     overflow: hidden;
-    background-color: rgb(115, 135, 247);
+    background-color: rgb(125, 167, 245);
     transition: 0.3s;
 }
 
 .sidebar a {
+    margin: 5px;
+    display: block;
     font-size: 25px;
     transition: 0.3s;
+    color: blanchedalmond;
 }
 
-.bt_sidebar {
-    position: absolute;
-    bottom: 13%;
+.sidebar #blank {
+    height: 47px;
+}
+
+.bt-sidebar {
+    width: 47px;
+    height: 47px;
+    position: relative;
+    bottom: 30%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word;
+    font-weight: bold;
+    color: #d3e18c;
+    background-color: #485f44;
+    border: 0;
+    outline: none;
+    cursor: pointer;
     transition: 0.3s;
 }
 
