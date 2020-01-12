@@ -1,9 +1,10 @@
 #info-wrapper {
-    height: 40%;
-    text-align: right;
-    position: relative;
-    top: 30%;
-    padding: 3px 0;
+    height: 7%;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 10px;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.411);
 }
 
@@ -13,4 +14,11 @@
     text-transform: uppercase;
     font-weight: bold;
     color: #d3e18c;
+}
+
+
+@media screen and (max-width: 650px) {
+    #info-wrapper {
+        height: 5%;
+    }
 }

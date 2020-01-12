@@ -1,5 +1,5 @@
 #sign-wrapper {
-    height: 20%;
+    height: 30%;
     text-align: center;
 }
 
@@ -13,7 +13,6 @@
 
 @media screen and (max-width: 650px) {
     #sign {
-        padding: 4%;
-        font-size: 150%;
+        font-size: 160%;
     }
 }

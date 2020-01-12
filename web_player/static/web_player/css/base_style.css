@@ -9,7 +9,18 @@ body {
     background-attachment: fixed;
     background-position-y: 40%; 
     height: 100%;
+    width: 100%;
     overflow: hidden;
     margin: 0;
-    transition: 0.3s;
+    position: fixed;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        background-attachment: fixed;
+        position: fixed;
+    }
 }

@@ -7,15 +7,27 @@
     transition: 0.3s;
 }
 
-.sidebar a {
-    margin: 5px;
-    display: block;
-    font-size: 25px;
-    transition: 0.3s;
+.history-cell {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    margin: 10px;
+    font-size: 20px;
     color: blanchedalmond;
+    transition: 0.3s;
 }
 
-.sidebar #blank {
+.time {
+    display: table-cell;
+    width: 20%;
+}
+
+.track {
+    display: table-cell;
+    width: 80%;
+}
+
+#blank {
     height: 47px;
 }
 
@@ -41,4 +53,19 @@
     height: 100%;
     margin-left: 0;
     transition: 0.3s;
+}
+
+@media screen and (max-width: 650px) {
+    .history-cell {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .time {
+        font-size: 20px;
+    }
+
+    .track {
+        font-size: 30px;
+    }
 }
