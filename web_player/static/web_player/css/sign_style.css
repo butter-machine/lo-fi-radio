@@ -1,5 +1,6 @@
 #sign-wrapper {
     height: 30%;
+    position: relative;
     text-align: center;
 }
 
@@ -9,6 +10,14 @@
     text-transform: uppercase;
     font-weight: bold;
     color: #485f44;
+}
+
+hr {
+    width: 400px;
+    min-width: 400px;
+    color: #485f44;
+    border: 1px solid;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 650px) {

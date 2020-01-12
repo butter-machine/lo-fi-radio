@@ -31,6 +31,16 @@
     height: 47px;
 }
 
+#playlist-title {
+    margin: 10px;
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #485f44;
+    transition: 0.2s;
+}
+
 .bt-sidebar {
     width: 47px;
     height: 47px;

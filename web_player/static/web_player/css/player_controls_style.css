@@ -31,22 +31,22 @@
   
 #volume::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 28px;
-    width: 28px;
+    height: 30px;
+    width: 30px;
     background: #d3e18c;
 }
 
 #volume::-moz-range-thumb {
     -webkit-appearance: none;
-    height: 28px;
-    width: 28px;
+    height: 30px;
+    width: 30px;
     background: #d3e18c;
 }
 
 #volume::-ms-thumb {
     -webkit-appearance: none;
-    height: 28px;
-    width: 28px;
+    height: 30px;
+    width: 30px;
     background: #d3e18c;
 }
 
