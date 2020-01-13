@@ -2,8 +2,6 @@
 <link rel="stylesheet" type="text/css" href="{% static "web_player/css/info_style.css" %}" />
 
 <div class="wrapper" id="info-wrapper">
-    <div class="info" id="listeners-count">
-        Listeners: {{ listeners_count }}
-    </div>
+    {% include "listeners_count.html" %}
     <a class="info" id="m3u" href={{ m3u }} target="_blank">Listen in player</a>
 </div>

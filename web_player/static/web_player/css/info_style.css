@@ -9,6 +9,7 @@
 }
 
 .info{
+    text-align: left;
     padding: 0 20px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;

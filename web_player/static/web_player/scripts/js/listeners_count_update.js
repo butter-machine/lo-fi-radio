@@ -10,5 +10,5 @@ function listeners_count_update() {
 
 $(document).ready(function() {
     listeners_count_update();
-    setInterval('listeners_count_update()', 10000);
+    setInterval('listeners_count_update()', 1000);
 });
