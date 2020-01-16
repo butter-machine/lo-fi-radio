@@ -1,6 +1,10 @@
 from django.shortcuts import render, render_to_response
-from .icecast_api.icecast_interface import IcecastInterface
+from .icecast_api.icecast import Icecast
 # Create your views here.
+
+
+icecast = Icecast()
+
 
 def index(request):
     return render(
@@ -10,8 +14,8 @@ def index(request):
     )
 
 def sign_update(request):
-    result = IcecastInterface.getSign()
-    response_dict = {'artist': result[0], 'track': result[1]}
+    artist, track = icecast.getSignHTTP()
+    response_dict = {'artist': artist, 'track': track}
     return render(
         request,
         'sign.html',
@@ -19,7 +23,7 @@ def sign_update(request):
     )
 
 def listeners_count_update(request):
-    result = IcecastInterface.getListenersCount()
+    result = icecast.getListenersCount()
     response_dict = {'listeners_count': result}
     return render(
         request,
