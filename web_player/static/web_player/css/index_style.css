@@ -1,3 +1,51 @@
 .wrapper {
     margin: 20px 0;
 }
+
+.content {
+   opacity: 0;
+}
+
+.bt-sidebar {
+    opacity: 0;
+}
+
+.tape {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 400px;
+}
+
+#tape-body {
+    position: relative;
+    width: 400px;
+}
+
+.tape-wheel {
+    position: relative;
+    width: 55px;
+    bottom: 176px;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+
+#tape-wheel-right {
+    left: 91px;
+}
+
+#tape-wheel-left {
+    left: 197px;
+}
+
+@keyframe rotate {
+    0% { transform: rotate(0turn); }
+    100% { transform: rotate(6turn); }
+  }
+
+@-webkit-keyframes rotate {
+0% { transform: rotate(0turn); }
+100% { transform: rotate(6turn); }
+}

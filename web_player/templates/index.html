@@ -1,25 +1,32 @@
 {% extends "base_generic.html" %}
 
-<body>
-    {% block content %}
-    {% load staticfiles%}
-        <link rel="stylesheet" type="text/css" href="{% static "web_player/css/index_style.css" %}" />
-        <script type="text/javascript" src="{% static "web_player/scripts/js/player_controls.js" %}"></script>
-        <script type="text/javascript" src="{% static "web_player/scripts/js/listeners_count_update.js" %}"></script>
-        <script type="text/javascript" src="{% static "web_player/scripts/js/sign_update.js" %}"></script>
-        <audio id="audio" 
-            preload="auto"
-            onloadstart="buffering()"
-            oncanplay="canPlay()">
-            <source src={{ stream }} type="audio/mpeg">
-        </audio>
+{% block content %}
+{% load staticfiles%}
+    <link rel="stylesheet" type="text/css" href="{% static "web_player/css/index_style.css" %}" />
+    <script type="text/javascript" src="{% static "web_player/scripts/js/loadscreen.js" %}"></script>
+    <script type="text/javascript" src="{% static "web_player/scripts/js/player_controls.js" %}"></script>
+    <script type="text/javascript" src="{% static "web_player/scripts/js/listeners_count_update.js" %}"></script>
+    <script type="text/javascript" src="{% static "web_player/scripts/js/sign_update.js" %}"></script>
+    <audio id="audio" 
+        preload="auto"
+        onloadstart="buffering()"
+        oncanplay="canPlay()">
+        <source src={{ stream }} type="audio/mpeg">
+    </audio>
 
-        {% include "sidebar.html" %}
+    {% include "sidebar.html" %}
 
-        <div class="content">
-            {% include "sign.html" %}
-            {% include "player_controls.html" %}
-            {% include "info.html" %}
+    <div class="loadscreen">
+        <div class="tape">
+            <img id="tape-body" src="{% static "web_player/images/tape_body.png" %}">
+            <img class="tape-wheel" id="tape-wheel-right" src="{% static "web_player/images/tape_wheel.png" %}">
+            <img class="tape-wheel" id="tape-wheel-left" src="{% static "web_player/images/tape_wheel.png" %}">
         </div>
-    {% endblock %}
-</body>
+    </div>
+
+    <div class="content">
+        {% include "sign.html" %}
+        {% include "player_controls.html" %}
+        {% include "info.html" %}
+    </div>
+{% endblock %}

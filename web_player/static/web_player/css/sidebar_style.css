@@ -9,22 +9,21 @@
 
 .history-cell {
     height: 30px;
-    line-height: 30px;
-    overflow: hidden;
-    margin: 10px;
+    margin: 30px 10px;
     font-size: 20px;
     color: blanchedalmond;
     transition: 0.3s;
 }
 
 .time {
-    display: table-cell;
     width: 20%;
+    display: inline-block;
 }
 
 .track {
-    display: table-cell;
-    width: 80%;
+    display:inline;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #blank {

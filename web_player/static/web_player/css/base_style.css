@@ -13,6 +13,7 @@ body {
     overflow: hidden;
     margin: 0;
     position: fixed;
+    transition: 0.7s;
 }
 
 @media screen and (max-width: 650px) {

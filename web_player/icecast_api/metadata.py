@@ -19,10 +19,10 @@ class Parser:
         return sign.split(' - ')
 
     def getListenersCount(self):
-        self.__parse(self)
+        self.__parse()
         annotation = self.xmldoc.getElementsByTagName('annotation')[0].firstChild.nodeValue
         listeners_count_index = annotation.find(self._LISTENERS_COUNT_STRING)
-        listeners_count = annotation[listeners_count_index + len(LISTENERS_COUNT_STRING)]
+        listeners_count = annotation[listeners_count_index + len(self._LISTENERS_COUNT_STRING)]
         return listeners_count
 
 
