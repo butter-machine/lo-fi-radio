@@ -18,6 +18,15 @@
     width: 400px;
 }
 
+.tape-sign {
+    position: relative;
+    bottom: 225px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Courier New;
+    color: #485f44;
+}
+
 #tape-body {
     position: relative;
     width: 400px;
@@ -26,7 +35,7 @@
 .tape-wheel {
     position: relative;
     width: 55px;
-    bottom: 176px;
+    bottom: 220px;
     animation-name: rotate;
     animation-duration: 10s;
     animation-delay: 0s;
@@ -48,4 +57,33 @@
 @-webkit-keyframes rotate {
 0% { transform: rotate(0turn); }
 100% { transform: rotate(6turn); }
+}
+
+@media screen and (max-width: 650px) {
+    .tape {
+        width: 250px;
+    }
+
+    #tape-body {
+        width: 250px;
+        top: 100px;
+    }
+    
+    .tape-wheel {
+        width: 35px;
+        bottom: 36px;
+    }
+    
+    #tape-wheel-right {
+        left: 56px;
+    }
+    
+    #tape-wheel-left {
+        left: 121px;
+    }
+
+    .tape-sign {
+        bottom: 40px;
+        font-size: 20px;
+    }
 }
