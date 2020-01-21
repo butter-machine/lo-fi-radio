@@ -2,6 +2,7 @@ import os
 import urllib.parse
 
 BASE_URL = 'http://52.36.229.29:8000'
+PLAYLIST_SERVER_URL = 'http://52.36.229.29:8080'
 MOUNTPOINT_URL = urllib.parse.urljoin(BASE_URL, '/lo-fi-radio')
 XSPF_URL = MOUNTPOINT_URL + '.xspf'
 M3U_URL = MOUNTPOINT_URL + '.m3u'

@@ -13,12 +13,12 @@ class Parser:
     def __parse(self):
         self.xmldoc = minidom.parse(XSPF_PATH)
         
-    def getSign(self):
+    def get_sign(self):
         self.__parse(self)
         sign = self.xmldoc.getElementsByTagName('title')[1].firstChild.nodeValue
         return sign.split(' - ')
 
-    def getListenersCount(self):
+    def get_listeners_count(self):
         self.__parse()
         annotation = self.xmldoc.getElementsByTagName('annotation')[0].firstChild.nodeValue
         listeners_count_index = annotation.find(self._LISTENERS_COUNT_STRING)
@@ -30,13 +30,13 @@ class HTTPResponse:
     def __init__(self):
         self._ENCODING = 'latin1'
 
-    def getSign(self):
+    def get_sign(self):
         url = MOUNTPOINT_URL
         request = urllib2.Request(url, headers={'Icy-MetaData': 1})
         response = urllib2.urlopen(request)
         metaint = int(response.headers['icy-metaint'])
 
-        for _ in range(10): # # title may be empty initially, try several times
+        for _ in range(10): # title may be empty initially, try several times
             response.read(metaint)
             metadata_length = struct.unpack('B', response.read(1))[0] * 16
             metadata = response.read(metadata_length).rstrip(b'\0')

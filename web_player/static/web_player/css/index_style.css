@@ -50,13 +50,21 @@
 }
 
 @keyframe rotate {
-    0% { transform: rotate(0turn); }
-    100% { transform: rotate(6turn); }
+    0% { 
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(6turn);
+    }
   }
 
 @-webkit-keyframes rotate {
-0% { transform: rotate(0turn); }
-100% { transform: rotate(6turn); }
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(6turn);
+    }
 }
 
 @media screen and (max-width: 650px) {

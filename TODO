@@ -2,3 +2,5 @@ add play/stop control from keyboard
 add HTML player alert
 rewrite all html with "-"
 fonts
+
+add to readme EC2 website port activation

@@ -1,19 +1,24 @@
 from .downloader import Downloader
 from .metadata import Parser, HTTPResponse
+from .playlist import Playlist
 
 class Icecast():
     def __init__(self):
         self._downloader = Downloader()
         self._parser = Parser()
         self._http_response = HTTPResponse()
+        self._playlist = Playlist()
     
-    def getSignHTTP(self):
-        return self._http_response.getSign()
+    def get_sign_HTTP(self):
+        return self._http_response.get_sign()
     
-    def getSignXSPF(self):
+    def get_sign_XSPF(self):
         self._downloader.download()
-        return self._parser.getSign()
+        return self._parser.get_sign()
 
-    def getListenersCount(self):
+    def get_listeners_count(self):
         self._downloader.download()
-        return self._parser.getListenersCount()
+        return self._parser.get_listeners_count()
+
+    def get_playlist(self):
+        return self._playlist.get_playlist()
